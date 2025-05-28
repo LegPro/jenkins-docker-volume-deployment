@@ -97,7 +97,7 @@ pipeline {
         GIT_REPO = "https://github.com/LegPro/project.git"
         MAVEN_HOME = '/opt/maven'
         PATH = "${MAVEN_HOME}/bin:${env.PATH}"
-        DB_URL = 'jdbc:mysql://database-1.czqi002ku7kt.ap-south-1.rds.amazonaws.com:3306/test'
+        DB_URL = 'jdbc:mysql://url.rds.amazonaws.com:3306/test'
     }
 
     stages {
