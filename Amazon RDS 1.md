@@ -13,6 +13,16 @@ Deploy the LoginWebApp on Tomcat running inside a Docker container on Jenkins ma
 ```bash
 yum install java-17-amazon-corretto.x86_64 -y
 yum install git -y
+```
+**Install Jenkins**:
+```bash
+sudo su
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+yum install java-17-amazon-corretto.x86_64 -y
+yum install git -y
 yum install jenkins -y
 ```
 
